@@ -2,16 +2,16 @@ using UnityEngine;
 
 public class Player : MonoBehaviour
 {
-    public float speed;
-    public float jumpForce;
-    public float fallMultiplier = 0.5f;
-    public float lowJumpMultiplier = 1f;
-
     private Rigidbody2D rbd2;
-    public float groundCheckRadius = 0.0001f;
-    public LayerMask groundLayer;
-
-    private bool jumpPressed;
+    [Header("Movement Settings")]
+    [SerializeField] private float speed;
+    [SerializeField] private float jumpForce;
+    [SerializeField] private float fallMultiplier = 0.5f;
+    [SerializeField] private float lowJumpMultiplier = 1f;
+    [Header("Ground Check Settings")]
+    [SerializeField] private Transform groundCheck;
+    [SerializeField] private Vector2 groundCheckSize;
+    [SerializeField] private LayerMask groundLayer;
 
     void Start()
     {
@@ -43,7 +43,7 @@ public class Player : MonoBehaviour
     public bool isGrounded()
     {
 
-        return Physics2D.OverlapCircle(transform.position, groundCheckRadius, groundLayer);
+        return Physics2D.OverlapBox(groundCheck.position, groundCheckSize, 0, groundLayer);
     }
 
     public void Move()
@@ -66,7 +66,7 @@ public class Player : MonoBehaviour
     void OnDrawGizmos()
     {
         Gizmos.color = isGrounded() ? Color.green : Color.red;
-        Gizmos.DrawSphere(transform.position, groundCheckRadius);
+        Gizmos.DrawCube(groundCheck.position, groundCheckSize);
     }
 }
 
