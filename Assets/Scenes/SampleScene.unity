@@ -154,7 +154,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDamping: 0
   m_AngularDamping: 0.05
-  m_GravityScale: 1
+  m_GravityScale: 2
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -233,10 +233,11 @@ Transform:
   m_GameObject: {fileID: 456184436}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1.81, z: 0}
+  m_LocalPosition: {x: 0, y: 1.71, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 1932630940}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &456184440
@@ -251,11 +252,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f62d8af6d59dceb4fb48beb6f79362b6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Player
-  speed: 5
-  jumpForce: 8
-  fallMultiplier: 0.5
-  lowJumpMultiplier: 1
-  groundCheckRadius: 0.5
+  speed: 8
+  jumpForce: 12
+  fallMultiplier: 2
+  lowJumpMultiplier: 4
+  groundCheck: {fileID: 1932630940}
+  groundCheckSize: {x: 0.8, y: 0.2}
   groundLayer:
     serializedVersion: 2
     m_Bits: 8
@@ -1075,6 +1077,37 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
+--- !u!1 &1932630939
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1932630940}
+  m_Layer: 0
+  m_Name: GroundCheck
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1932630940
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1932630939}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: -0.44, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 456184439}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
