@@ -24,7 +24,6 @@ public class Player : MonoBehaviour
     [SerializeField] private float climbingDrag = 5f;
     [SerializeField] private float walljumpLockTime = 0.12f;
 
-
     [Header("Dash Settings")]
     [SerializeField] private float dashSpeed;
     [SerializeField] private float dashCoolDown = 0.5f;
@@ -111,9 +110,16 @@ public class Player : MonoBehaviour
 
     private void DashInputHandler()
     {
-        dashInput = spriteRenderer.flipX ? -1 : 1;
-
         if (isWalljumpLock || wallJumpPressed) return;
+
+        if (isClimbing)
+        {
+            dashInput = IsLeftWallCheckColliding() ? 1 : -1;
+        }
+        else
+        {
+            dashInput = spriteRenderer.flipX ? -1 : 1;
+        }
 
         if (Input.GetKeyDown(KeyCode.LeftShift) && canDash)
         {
