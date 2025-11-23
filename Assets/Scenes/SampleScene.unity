@@ -301,7 +301,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 8
   climbingDrag: 8
-  walljumpLockTime: 1
+  walljumpLockTime: 0.1
   dashSpeed: 10
   dashCoolDown: 0.5
   canDash: 1
