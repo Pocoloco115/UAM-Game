@@ -1,9 +1,10 @@
+using System.Collections;
 using UnityEngine;
+using UnityEngine.Rendering;
 
 public class Player : MonoBehaviour
 {
-    private Rigidbody2D rbd2;
-
+    private Rigidbody2D rb2d;
     [Header("Movement Settings")]
     [SerializeField] private float speed;
     [SerializeField] private float jumpForce;
@@ -21,16 +22,33 @@ public class Player : MonoBehaviour
     [SerializeField] private Vector2 wallCheckSize;
     [SerializeField] private LayerMask wallLayer;
     [SerializeField] private float climbingDrag = 5f;
-    private float originalDrag;
+    [SerializeField] private float walljumpLockTime = 0.12f;
 
+
+    [Header("Dash Settings")]
+    [SerializeField] private float dashSpeed;
+    [SerializeField] private float dashCoolDown = 0.5f;
+    [SerializeField] private bool canDash = true;
+
+    private bool isWalljumpLock = false;
+
+    private SpriteRenderer spriteRenderer;
+
+    private float dashInput;
+    private float originalDrag;
     private float horizontalInput;
+    private float currGravityScale;
     private bool jumpPressed;
     private bool wallJumpPressed;
     private bool isClimbing;
+    private bool isDashing;
+
     void Start()
     {
-        rbd2 = GetComponent<Rigidbody2D>();
-        originalDrag = rbd2.linearDamping;
+        rb2d = GetComponent<Rigidbody2D>();
+        spriteRenderer = GetComponent<SpriteRenderer>();
+        originalDrag = rb2d.linearDamping;
+        currGravityScale = rb2d.gravityScale;
     }
 
     void Update()
@@ -38,17 +56,16 @@ public class Player : MonoBehaviour
         MovementInputHandler();
         JumpInputHandler();
         WallJumpHandler();
-        if(!isClimbing && IsTryingToClimbWall())
-        {
+        DashInputHandler();
+
+        if (!isClimbing && IsTryingToClimbWall())
             isClimbing = true;
-        }
 
         if (IsGrounded() || (!IsLeftWallCheckColliding() && !IsRightWallCheckColliding()))
-        {
             isClimbing = false;
-        }
 
-        rbd2.linearDamping = isClimbing ? climbingDrag : originalDrag;
+        rb2d.linearDamping = isClimbing ? climbingDrag : originalDrag;
+        rb2d.gravityScale = isDashing ? 0 : currGravityScale;
     }
 
     void FixedUpdate()
@@ -58,11 +75,6 @@ public class Player : MonoBehaviour
         WallJump();
     }
 
-
-    private void MovementInputHandler()
-    {
-        horizontalInput = Input.GetAxisRaw("Horizontal");
-    }
 
     private bool IsTryingToClimbLeftWall()
     {
@@ -78,11 +90,14 @@ public class Player : MonoBehaviour
     {
         return IsTryingToClimbLeftWall() || IsTryingToClimbRightWall();
     }
+
     private void JumpInputHandler()
     {
+        if(isDashing) { return; }
         if (Input.GetKeyDown(KeyCode.Space) && IsGrounded() && !isClimbing)
         {
             jumpPressed = true;
+
         }
     }
 
@@ -94,38 +109,107 @@ public class Player : MonoBehaviour
         }
     }
 
+    private void DashInputHandler()
+    {
+        dashInput = spriteRenderer.flipX ? -1 : 1;
+
+        if (isWalljumpLock || wallJumpPressed) return;
+
+        if (Input.GetKeyDown(KeyCode.LeftShift) && canDash)
+        {
+            Dash();
+            StartCoroutine(DashCooldown());
+        }
+    }
+
+    private void MovementInputHandler()
+    {
+        horizontalInput = Input.GetAxisRaw("Horizontal");
+
+        if (horizontalInput < 0)
+        {
+            spriteRenderer.flipX = true;
+        }
+        else if (horizontalInput > 0)
+        {
+            spriteRenderer.flipX = false;
+        }
+    }
+
+    private void Dash()
+    {
+        if (!canDash) return;
+        if (isWalljumpLock) return; 
+
+        isDashing = true;
+
+        rb2d.linearVelocity = Vector2.zero; 
+        rb2d.gravityScale = 0;             
+
+        rb2d.linearVelocity = new Vector2(dashInput * dashSpeed, 0); 
+
+        StartCoroutine(EndDash());
+    }
+
     private void WallJump()
     {
-        if(wallJumpPressed)
-        {
-            rbd2.linearVelocity = new Vector2(IsLeftWallCheckColliding() ? jumpForce * 4 : jumpForce * -4 , jumpForce); 
-            wallJumpPressed = false;
-        }
+        if (isDashing) return;
+        if (!wallJumpPressed) return;
+
+        rb2d.linearVelocity = new Vector2(IsLeftWallCheckColliding() ? jumpForce * 4 : jumpForce * -4, jumpForce);
+
+        wallJumpPressed = false;
+
+        StartCoroutine(WalljumpLock());
     }
 
     private void Move()
     {
-        rbd2.linearVelocity = new Vector2(horizontalInput * speed, rbd2.linearVelocity.y);
+        if (isDashing) return;
+
+        rb2d.linearVelocity = new Vector2(horizontalInput * speed, rb2d.linearVelocity.y);
+
     }
 
     private void Jump()
     {
         if (jumpPressed)
         {
-            rbd2.linearVelocity = new Vector2(rbd2.linearVelocity.x, jumpForce);
-            jumpPressed = false; 
+            rb2d.linearVelocity = new Vector2(rb2d.linearVelocity.x, jumpForce);
+            jumpPressed = false;
         }
 
-        if (rbd2.linearVelocity.y < 0)
+        if (rb2d.linearVelocity.y < 0)
         {
-            rbd2.linearVelocity += Vector2.up * Physics2D.gravity.y * fallMultiplier * Time.deltaTime;
+            rb2d.linearVelocity += Vector2.up * Physics2D.gravity.y * fallMultiplier * Time.deltaTime;
         }
-        else if (rbd2.linearVelocity.y > 0 && !Input.GetKey(KeyCode.Space))
+
+        else if (rb2d.linearVelocity.y > 0 && !Input.GetKey(KeyCode.Space))
         {
-            rbd2.linearVelocity += Vector2.up * Physics2D.gravity.y * lowJumpMultiplier * Time.deltaTime;
+            rb2d.linearVelocity += Vector2.up * Physics2D.gravity.y * lowJumpMultiplier * Time.deltaTime;
         }
     }
 
+    private IEnumerator DashCooldown()
+    {
+        canDash = false;
+        yield return new WaitForSeconds(dashCoolDown);
+        canDash = true;
+    }
+
+    private IEnumerator EndDash()
+    {
+        yield return new WaitForSeconds(0.2f);
+        isDashing = false;
+        rb2d.gravityScale = currGravityScale;
+    }
+
+    private IEnumerator WalljumpLock()
+    {
+        isWalljumpLock = true;
+        yield return new WaitForSeconds(walljumpLockTime);
+        isWalljumpLock = false;
+    }
 
     private bool IsGrounded()
     {
@@ -134,21 +218,23 @@ public class Player : MonoBehaviour
 
     private bool IsLeftWallCheckColliding()
     {
-        return Physics2D.OverlapBox(leftWallCheck.position, wallCheckSize, 0, wallLayer) && !IsGrounded();
+        return Physics2D.OverlapBox(leftWallCheck.position, wallCheckSize, 0, wallLayer)&& !IsGrounded();
     }
+
     private bool IsRightWallCheckColliding()
     {
-        return Physics2D.OverlapBox(rightWallCheck.position, wallCheckSize, 0, wallLayer) && !IsGrounded();
+        return Physics2D.OverlapBox(rightWallCheck.position, wallCheckSize, 0, wallLayer)&& !IsGrounded();
     }
+
     void OnDrawGizmos()
     {
         Gizmos.color = IsGrounded() ? Color.green : Color.red;
         Gizmos.DrawCube(groundCheck.position, groundCheckSize);
+
         Gizmos.color = IsLeftWallCheckColliding() ? Color.green : Color.red;
         Gizmos.DrawCube(leftWallCheck.position, wallCheckSize);
+
         Gizmos.color = IsRightWallCheckColliding() ? Color.green : Color.red;
         Gizmos.DrawCube(rightWallCheck.position, wallCheckSize);
     }
 }
-
-
