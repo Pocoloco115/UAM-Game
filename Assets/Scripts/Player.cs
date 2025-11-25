@@ -77,12 +77,12 @@ public class Player : MonoBehaviour
 
     private bool IsTryingToClimbLeftWall()
     {
-        return IsLeftWallCheckColliding() && horizontalInput < 0;
+        return IsLeftWallCheckColliding() && (horizontalInput < 0 || dashInput < 0);
     }
 
     private bool IsTryingToClimbRightWall()
     {
-        return IsRightWallCheckColliding() && horizontalInput > 0;
+        return IsRightWallCheckColliding() && (horizontalInput > 0 || dashInput > 0);
     }
 
     private bool IsTryingToClimbWall()
