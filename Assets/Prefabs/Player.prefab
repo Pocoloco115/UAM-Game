@@ -116,7 +116,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
+  m_Sprite: {fileID: -9217409067371959239, guid: c006a403a5968a041b946d651ada1616, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -186,6 +186,7 @@ MonoBehaviour:
   dashSpeed: 10
   dashCoolDown: 0.5
   canDash: 1
+  mainCamera: {fileID: 0}
 --- !u!70 &6907832374219038897
 CapsuleCollider2D:
   m_ObjectHideFlags: 0

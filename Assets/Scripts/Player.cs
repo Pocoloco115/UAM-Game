@@ -45,6 +45,7 @@ public class Player : MonoBehaviour
     private bool wallJumpPressed;
     private bool isClimbing;
     private bool isDashing;
+    private Animator animator;
     private Transform playerTransform;
 
     void Start()
@@ -54,6 +55,7 @@ public class Player : MonoBehaviour
         originalDrag = rb2d.linearDamping;
         currGravityScale = rb2d.gravityScale;
         playerTransform = GetComponent<Transform>();
+        animator = GetComponent<Animator>();
     }
 
     void Update()
@@ -65,13 +67,29 @@ public class Player : MonoBehaviour
         ChekPlayerPosition();
 
         if (!isClimbing && IsTryingToClimbWall())
+        {
             isClimbing = true;
+        }
 
         if (IsGrounded() || (!IsLeftWallCheckColliding() && !IsRightWallCheckColliding()))
+        {
             isClimbing = false;
+        }
+        if (isClimbing) 
+        {
+            if (IsLeftWallCheckColliding())
+            {
+                spriteRenderer.flipX = false;
+            }
+            else if (IsRightWallCheckColliding())
+            {
+                spriteRenderer.flipX = true;
+            }
+        }
 
         rb2d.linearDamping = isClimbing ? climbingDrag : originalDrag;
         rb2d.gravityScale = isDashing ? 0 : currGravityScale;
+        UpdateAnimations();
     }
 
     void FixedUpdate()
@@ -103,7 +121,6 @@ public class Player : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Space) && IsGrounded() && !isClimbing)
         {
             jumpPressed = true;
-
         }
     }
 
@@ -243,7 +260,6 @@ public class Player : MonoBehaviour
     {
         UnityEngine.SceneManagement.SceneManager.LoadScene(UnityEngine.SceneManagement.SceneManager.GetActiveScene().name);
     }
-    //Check if the player is inside of the camera
     private void ChekPlayerPosition()
     {
         Vector2 viewportPoint = mainCamera.WorldToViewportPoint(playerTransform.position);
@@ -254,6 +270,39 @@ public class Player : MonoBehaviour
             TakeDamage();
         }
     }
+
+    private void UpdateAnimations()
+    {
+        bool grounded = IsGrounded();
+        float velY = rb2d.linearVelocity.y;
+
+        animator.SetBool("isDashing", isDashing);
+
+        animator.SetBool("isClimbing", isClimbing && !isDashing);
+
+        animator.SetBool("isIdle",
+            grounded &&
+            horizontalInput == 0 &&
+            !isDashing &&
+            !isClimbing
+        );
+
+        animator.SetBool("isWalking",
+            grounded &&
+            Mathf.Abs(horizontalInput) > 0.1f &&
+            !isDashing &&
+            !isClimbing
+        );
+
+        animator.SetBool("isJumping",
+            !grounded &&
+            velY > 0.1f &&
+            !isDashing &&
+            !isClimbing
+        );
+    }
+
+
     void OnDrawGizmos()
     {
         Gizmos.color = IsGrounded() ? Color.green : Color.red;
