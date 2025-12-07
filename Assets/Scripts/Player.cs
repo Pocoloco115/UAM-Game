@@ -1,6 +1,7 @@
 using System.Collections;
 using UnityEngine;
 using UnityEngine.Rendering;
+using UnityEngine.SceneManagement;
 
 public class Player : MonoBehaviour
 {
@@ -29,6 +30,9 @@ public class Player : MonoBehaviour
     [SerializeField] private float dashCoolDown = 0.5f;
     [SerializeField] private bool canDash = true;
 
+    [Header("Camera Reference")]
+    [SerializeField] private Camera mainCamera;
+
     private bool isWalljumpLock = false;
 
     private SpriteRenderer spriteRenderer;
@@ -41,6 +45,7 @@ public class Player : MonoBehaviour
     private bool wallJumpPressed;
     private bool isClimbing;
     private bool isDashing;
+    private Transform playerTransform;
 
     void Start()
     {
@@ -48,6 +53,7 @@ public class Player : MonoBehaviour
         spriteRenderer = GetComponent<SpriteRenderer>();
         originalDrag = rb2d.linearDamping;
         currGravityScale = rb2d.gravityScale;
+        playerTransform = GetComponent<Transform>();
     }
 
     void Update()
@@ -56,6 +62,7 @@ public class Player : MonoBehaviour
         JumpInputHandler();
         WallJumpHandler();
         DashInputHandler();
+        ChekPlayerPosition();
 
         if (!isClimbing && IsTryingToClimbWall())
             isClimbing = true;
@@ -232,6 +239,21 @@ public class Player : MonoBehaviour
         return Physics2D.OverlapBox(rightWallCheck.position, wallCheckSize, 0, wallLayer)&& !IsGrounded();
     }
 
+    public void TakeDamage()
+    {
+        UnityEngine.SceneManagement.SceneManager.LoadScene(UnityEngine.SceneManagement.SceneManager.GetActiveScene().name);
+    }
+    //Check if the player is inside of the camera
+    private void ChekPlayerPosition()
+    {
+        Vector2 viewportPoint = mainCamera.WorldToViewportPoint(playerTransform.position);
+        bool isBellowViewport = viewportPoint.y < 0;
+        bool isHorizontallyWithinViewport = viewportPoint.x >= 0 && viewportPoint.x <= 1;
+        if (isBellowViewport && isHorizontallyWithinViewport)
+        {
+            TakeDamage();
+        }
+    }
     void OnDrawGizmos()
     {
         Gizmos.color = IsGrounded() ? Color.green : Color.red;

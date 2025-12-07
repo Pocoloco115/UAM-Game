@@ -1,9 +1,15 @@
 using UnityEngine;
-using UnityEngine.SceneManagement;
-using UnityEngine.EventSystems;
 
-public class SceneManager : MonoBehaviour
+public class SpikeDamage : MonoBehaviour
 {
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if(collision.CompareTag("Player"))
+        {
+            collision.GetComponent<Player>().TakeDamage(); 
+        }
+    }
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -14,9 +20,5 @@ public class SceneManager : MonoBehaviour
     void Update()
     {
         
-    }
-    public void OnButtonClick()
-    {
-        UnityEngine.SceneManagement.SceneManager.LoadScene("Level1");
     }
 }
