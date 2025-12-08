@@ -21,9 +21,9 @@ public class BackgroundAnimation : MonoBehaviour
     void Update()
     {
         rt.anchoredPosition += Vector2.left * speed * Time.deltaTime;
-        if(rt.anchoredPosition.x <= -canvasWidth/2f - imageWidth)
+        if(rt.anchoredPosition.x <= -canvasWidth/2f)
         {
-            rt.anchoredPosition = new Vector2(canvasWidth / 2f + imageWidth, rt.anchoredPosition.y);
+            rt.anchoredPosition = new Vector2(canvasWidth / 2f, rt.anchoredPosition.y);
         }
     }
 }
