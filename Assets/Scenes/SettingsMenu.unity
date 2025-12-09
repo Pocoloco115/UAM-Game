@@ -1228,7 +1228,6 @@ GameObject:
   - component: {fileID: 1652416268}
   - component: {fileID: 1652416267}
   - component: {fileID: 1652416266}
-  - component: {fileID: 1652416265}
   m_Layer: 5
   m_Name: SettingsPanel
   m_TagString: Untagged
@@ -1259,24 +1258,6 @@ RectTransform:
   m_AnchoredPosition: {x: 180, y: 46}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1652416265
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1652416263}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2ced331b1960696438fd9dc5af42353b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::InputSettingsManager
-  settings:
-    moveLeft: 0
-    moveRight: 0
-    jump: 0
-    dash: 0
-  keySprites: {fileID: 11400000, guid: d4fa793baa9bf7a408771b290a4f3e34, type: 2}
 --- !u!114 &1652416266
 MonoBehaviour:
   m_ObjectHideFlags: 0

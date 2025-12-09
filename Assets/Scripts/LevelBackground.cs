@@ -8,24 +8,24 @@ public class LevelBackground : MonoBehaviour
     [Header("Settings")]
     [SerializeField] private float speed;
 
-    private Transform transform;
+    private SpriteRenderer spriteRenderer;
     private float spriteWidth;
     private float cameraWidth;
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
+
     void Start()
     {
-        transform = GetComponent<Transform>();
-        spriteWidth = transform.localScale.x;
-        cameraWidth = camera.orthographicSize * camera.aspect * 2f;
+        spriteRenderer = GetComponent<SpriteRenderer>();
+        spriteWidth = spriteRenderer.sprite.bounds.size.x * transform.lossyScale.x;
+        cameraWidth = camera.orthographicSize * 2f * camera.aspect;
     }
 
-    // Update is called once per frame
     void Update()
     {
         transform.position += Vector3.left * speed * Time.deltaTime;
-        if(transform.position.x <= -cameraWidth/2f - spriteWidth * 2)
+
+        if (transform.position.x + spriteWidth / 2f <= -cameraWidth / 2f)
         {
-            transform.position = new Vector3(cameraWidth / 2f + spriteWidth/2f, transform.position.y, transform.position.z);
+            transform.position = new Vector3(cameraWidth / 2f + spriteWidth / 2f, transform.position.y, transform.position.z);
         }
     }
 }

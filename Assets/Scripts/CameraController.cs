@@ -39,4 +39,9 @@ public class CameraController : MonoBehaviour
 
         transform.position = new Vector3(transform.position.x, newY, transform.position.z);
     }
+
+    public void FreezeCamera()
+    {
+        autoScrollSpeed = 0f;
+    }
 }

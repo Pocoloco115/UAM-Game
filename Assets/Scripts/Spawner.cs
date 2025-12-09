@@ -15,8 +15,8 @@ public class PlatformSpawner : MonoBehaviour
     [SerializeField] private float verticalDistance = 3f;
     [SerializeField] private float minHorizontalDistance = 1.2f; 
     [SerializeField] private float maxHorizontalDistance = 4f;   
-    [SerializeField] private float maxVerticalStep = 4.5f;       
-
+    [SerializeField] private float maxVerticalStep = 4.5f;
+    [SerializeField] private float spikePlatformChance = 0.2f;
     private float nextSpawnY;
     private float minX;
     private float maxX;
@@ -107,7 +107,7 @@ public class PlatformSpawner : MonoBehaviour
         }
         else
         {
-            if (Random.value < 0.2f)
+            if (Random.value < spikePlatformChance)
                 return spikePlatformPrefab;
 
             return platformPrefabs[Random.Range(0, platformPrefabs.Length)];

@@ -41,14 +41,14 @@ public class KeyBindItem : MonoBehaviour
 
     private KeyCode GetCurrentKey()
     {
-        if (InputSettingsManager.Instance == null) return KeyCode.None;
+        if (InputSettingsManager.GetOrCreate() == null) return KeyCode.None;
 
         return actionName switch
         {
-            "MoveLeft" => InputSettingsManager.Instance.settings.moveLeft,
-            "MoveRight" => InputSettingsManager.Instance.settings.moveRight,
-            "Jump" => InputSettingsManager.Instance.settings.jump,
-            "Dash" => InputSettingsManager.Instance.settings.dash,
+            "MoveLeft" => InputSettingsManager.GetOrCreate().settings.moveLeft,
+            "MoveRight" => InputSettingsManager.GetOrCreate().settings.moveRight,
+            "Jump" => InputSettingsManager.GetOrCreate().settings.jump,
+            "Dash" => InputSettingsManager.GetOrCreate().settings.dash,
             _ => KeyCode.None
         };
     }
@@ -58,13 +58,17 @@ public class KeyBindItem : MonoBehaviour
     public void SetArrowActive(bool active)
     {
         if (arrow != null)
+        {
             arrow.gameObject.SetActive(active);
+        }
     }
 
     public void StartRebind()
     {
         if (!waitingForKey)
+        {
             StartCoroutine(RebindCoroutine());
+        }
     }
 
     private IEnumerator RebindCoroutine()
@@ -80,7 +84,7 @@ public class KeyBindItem : MonoBehaviour
             {
                 if (Input.GetKeyDown(key))
                 {
-                    bool success = InputSettingsManager.Instance.TrySetKey(actionName, key);
+                    bool success = InputSettingsManager.GetOrCreate().TrySetKey(actionName, key);
 
                     if (success)
                     {

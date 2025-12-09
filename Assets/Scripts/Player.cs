@@ -2,6 +2,7 @@ using System.Collections;
 using UnityEngine;
 using UnityEngine.Rendering;
 using UnityEngine.SceneManagement;
+using UnityEngine.UIElements;
 
 public class Player : MonoBehaviour
 {
@@ -47,6 +48,14 @@ public class Player : MonoBehaviour
     private bool isDashing;
     private Animator animator;
     private Transform playerTransform;
+    private int jumpCount = 2;
+    private bool isDying = false;
+    private bool wasInsideViewport = true;
+    private bool lockFlip = false;
+    private KeyCode KeyLeft => InputSettingsManager.GetOrCreate().settings.moveLeft;
+    private KeyCode KeyRight => InputSettingsManager.GetOrCreate().settings.moveRight;
+    private KeyCode KeyJump => InputSettingsManager.GetOrCreate().settings.jump;
+    private KeyCode KeyDash => InputSettingsManager.GetOrCreate().settings.dash;
 
     void Start()
     {
@@ -64,7 +73,8 @@ public class Player : MonoBehaviour
         JumpInputHandler();
         WallJumpHandler();
         DashInputHandler();
-        ChekPlayerPosition();
+        CheckPlayerPosition();
+        DoubleJumpInputHandler();
 
         if (!isClimbing && IsTryingToClimbWall())
         {
@@ -86,6 +96,10 @@ public class Player : MonoBehaviour
                 spriteRenderer.flipX = true;
             }
         }
+        if (IsGrounded() || isClimbing)
+        {
+            jumpCount = 2;
+        }
 
         rb2d.linearDamping = isClimbing ? climbingDrag : originalDrag;
         rb2d.gravityScale = isDashing ? 0 : currGravityScale;
@@ -96,6 +110,7 @@ public class Player : MonoBehaviour
     {
         Move();
         Jump();
+        DoubleJump();
         WallJump();
     }
 
@@ -115,20 +130,42 @@ public class Player : MonoBehaviour
         return IsTryingToClimbLeftWall() || IsTryingToClimbRightWall();
     }
 
+    private void MovementInputHandler()
+    {
+        horizontalInput = 0f;
+        if (Input.GetKey(KeyLeft)) { horizontalInput -= 1f; }
+        if (Input.GetKey(KeyRight)) { horizontalInput += 1f; }
+
+        if (!lockFlip)
+        {
+            if (horizontalInput < 0)
+            {
+                spriteRenderer.flipX = true;
+            }
+            else if (horizontalInput > 0)
+            {
+                spriteRenderer.flipX = false;
+
+            }
+        }
+    }
+
     private void JumpInputHandler()
     {
-        if(isDashing) { return; }
-        if (Input.GetKeyDown(KeyCode.Space) && IsGrounded() && !isClimbing)
+        if (isDashing) return;
+        if (Input.GetKeyDown(KeyJump) && IsGrounded() && !isClimbing)
         {
             jumpPressed = true;
+            jumpCount--;
         }
     }
 
     private void WallJumpHandler()
     {
-        if (Input.GetKeyDown(KeyCode.Space) && isClimbing && !IsGrounded())
+        if (Input.GetKeyDown(KeyJump) && isClimbing && !IsGrounded())
         {
             wallJumpPressed = true;
+            jumpCount--;
         }
     }
 
@@ -139,37 +176,38 @@ public class Player : MonoBehaviour
         if (isClimbing)
         {
             dashInput = IsLeftWallCheckColliding() ? 1 : -1;
+
         }
         else
         {
             dashInput = spriteRenderer.flipX ? -1 : 1;
         }
 
-        if (Input.GetKeyDown(KeyCode.LeftShift) && canDash)
+        if (Input.GetKeyDown(KeyDash) && canDash)
         {
             Dash();
             StartCoroutine(DashCooldown());
         }
     }
 
-    private void MovementInputHandler()
+    private void DoubleJumpInputHandler()
     {
-        horizontalInput = Input.GetAxisRaw("Horizontal");
-
-        if (horizontalInput < 0)
+        if (isDashing) { return; }
+        if (Input.GetKeyDown(KeyJump) && jumpCount > 0 && !IsGrounded() && !isClimbing)
         {
-            spriteRenderer.flipX = true;
-        }
-        else if (horizontalInput > 0)
-        {
-            spriteRenderer.flipX = false;
+            jumpPressed = true;
+            jumpCount--;
         }
     }
 
+    private void DoubleJump()
+    {
+        Jump();
+    }
     private void Dash()
     {
-        if (!canDash) return;
-        if (isWalljumpLock) return; 
+        if (!canDash) { return; }
+        if (isWalljumpLock) { return; } 
 
         isDashing = true;
 
@@ -183,8 +221,8 @@ public class Player : MonoBehaviour
 
     private void WallJump()
     {
-        if (isDashing) return;
-        if (!wallJumpPressed) return;
+        if (isDashing) { return; }
+        if (!wallJumpPressed) { return; }
 
         rb2d.linearVelocity = new Vector2(IsLeftWallCheckColliding() ? jumpForce * 4 : jumpForce * -4, jumpForce);
 
@@ -195,7 +233,7 @@ public class Player : MonoBehaviour
 
     private void Move()
     {
-        if (isDashing) return;
+        if (isDashing) { return; }
 
         rb2d.linearVelocity = new Vector2(horizontalInput * speed, rb2d.linearVelocity.y);
 
@@ -214,7 +252,7 @@ public class Player : MonoBehaviour
             rb2d.linearVelocity += Vector2.up * Physics2D.gravity.y * fallMultiplier * Time.deltaTime;
         }
 
-        else if (rb2d.linearVelocity.y > 0 && !Input.GetKey(KeyCode.Space))
+        else if (rb2d.linearVelocity.y > 0 && !Input.GetKey(KeyJump))
         {
             rb2d.linearVelocity += Vector2.up * Physics2D.gravity.y * lowJumpMultiplier * Time.deltaTime;
         }
@@ -256,19 +294,31 @@ public class Player : MonoBehaviour
         return Physics2D.OverlapBox(rightWallCheck.position, wallCheckSize, 0, wallLayer)&& !IsGrounded();
     }
 
-    public void TakeDamage()
+
+    public IEnumerator TakeDamage()
     {
+        isDying = true;
+        lockFlip = true;
+        rb2d.linearVelocity = Vector2.zero;
+        rb2d.gravityScale = 0;
+        rb2d.constraints = RigidbodyConstraints2D.FreezePosition;
+        mainCamera.GetComponent<CameraController>().FreezeCamera();
+        yield return new WaitForSeconds(0.30f);
         UnityEngine.SceneManagement.SceneManager.LoadScene(UnityEngine.SceneManagement.SceneManager.GetActiveScene().name);
     }
-    private void ChekPlayerPosition()
+    private void CheckPlayerPosition()
     {
         Vector2 viewportPoint = mainCamera.WorldToViewportPoint(playerTransform.position);
-        bool isBellowViewport = viewportPoint.y < 0;
-        bool isHorizontallyWithinViewport = viewportPoint.x >= 0 && viewportPoint.x <= 1;
-        if (isBellowViewport && isHorizontallyWithinViewport)
+
+        bool isInsideX = viewportPoint.x >= 0f && viewportPoint.x <= 1f;
+        bool isInsideY = viewportPoint.y >= 0f && viewportPoint.y <= 1f;
+        bool isInsideViewport = isInsideX && isInsideY;
+
+        if (wasInsideViewport && !isInsideViewport)
         {
-            TakeDamage();
+            StartCoroutine(TakeDamage());
         }
+        wasInsideViewport = isInsideViewport;
     }
 
     private void UpdateAnimations()
@@ -299,6 +349,25 @@ public class Player : MonoBehaviour
             velY > 0.1f &&
             !isDashing &&
             !isClimbing
+        );
+
+        animator.SetBool("isFalling",
+            !grounded &&
+            velY < -0.1f &&
+            !isDashing &&
+            !isClimbing
+        );
+
+        animator.SetBool("doubleJump",
+            !grounded &&
+            jumpCount == 1 &&
+            velY > 0.1f &&
+            !isDashing &&
+            !isClimbing
+        );
+
+        animator.SetBool("isDying",
+            isDying == true
         );
     }
 

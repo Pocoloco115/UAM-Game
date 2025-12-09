@@ -7,7 +7,7 @@ public class SpikeDamage : MonoBehaviour
     {
         if(collision.CompareTag("Player"))
         {
-            collision.GetComponent<Player>().TakeDamage(); 
+            StartCoroutine(collision.GetComponent<Player>().TakeDamage()); 
         }
     }
     // Start is called once before the first execution of Update after the MonoBehaviour is created

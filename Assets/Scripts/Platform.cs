@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 
 public class Platform : MonoBehaviour
@@ -5,6 +6,7 @@ public class Platform : MonoBehaviour
     [Header("Player Reference")]
     [SerializeField] private Transform player;
     private bool isSafe = true;
+    private Camera mainCamera;
 
     private void Awake()
     {
@@ -17,7 +19,7 @@ public class Platform : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        
+        mainCamera = Camera.main;
     }
 
     // Update is called once per frame
@@ -31,11 +33,20 @@ public class Platform : MonoBehaviour
         return isSafe;
     }
 
-    public void CleanPlatform()
+    private void CleanPlatform()
     {
-        if(transform.position.y < player.position.y - 10)
+        Vector2 viewportPoint = mainCamera.WorldToViewportPoint(transform.position);
+        bool isBellowViewport = viewportPoint.y < 0;
+        bool isHorizontallyWithinViewport = viewportPoint.x >= 0 && viewportPoint.x <= 1;
+        if (isBellowViewport && isHorizontallyWithinViewport)
         {
-            Destroy(gameObject);
+            StartCoroutine(DestroyPlatform());
         }
+    }
+
+    private IEnumerator DestroyPlatform()
+    {
+        yield return new WaitForSeconds(2f);
+        Destroy(gameObject);
     }
 }
