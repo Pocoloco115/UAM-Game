@@ -939,6 +939,10 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4102529888811406802, guid: 63ff00a114ad9f04890031b7d0c902f1, type: 3}
+      propertyPath: m_UpdateMode
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 5058384051301472960, guid: 63ff00a114ad9f04890031b7d0c902f1, type: 3}
       propertyPath: m_Navigation.m_Mode
       value: 0
@@ -961,7 +965,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6414299850459724223, guid: 63ff00a114ad9f04890031b7d0c902f1, type: 3}
       propertyPath: m_Name
-      value: Start
+      value: GoBack
       objectReference: {fileID: 0}
     - target: {fileID: 8381064980461020920, guid: 63ff00a114ad9f04890031b7d0c902f1, type: 3}
       propertyPath: m_text

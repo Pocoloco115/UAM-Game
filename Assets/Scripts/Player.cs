@@ -1,4 +1,5 @@
 using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Rendering;
 using UnityEngine.SceneManagement;
@@ -52,6 +53,8 @@ public class Player : MonoBehaviour
     private bool isDying = false;
     private bool wasInsideViewport = true;
     private bool lockFlip = false;
+    private HashSet<int> platformsId;
+    public int counter = 0;
     private KeyCode KeyLeft => InputSettingsManager.GetOrCreate().settings.moveLeft;
     private KeyCode KeyRight => InputSettingsManager.GetOrCreate().settings.moveRight;
     private KeyCode KeyJump => InputSettingsManager.GetOrCreate().settings.jump;
@@ -65,6 +68,7 @@ public class Player : MonoBehaviour
         currGravityScale = rb2d.gravityScale;
         playerTransform = GetComponent<Transform>();
         animator = GetComponent<Animator>();
+        platformsId = new HashSet<int>();
     }
 
     void Update()
@@ -319,6 +323,28 @@ public class Player : MonoBehaviour
             StartCoroutine(TakeDamage());
         }
         wasInsideViewport = isInsideViewport;
+    }
+
+    private void IncreaseCounter()
+    {
+        counter++;
+    }
+
+    public int GetCounter() { return counter; }
+
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision != null)
+        {
+            int currPlatformId = collision.gameObject.GetInstanceID();
+            if(platformsId.Contains(currPlatformId))
+            {
+                return;
+            }
+            platformsId.Add(currPlatformId);
+            IncreaseCounter();
+        }
     }
 
     private void UpdateAnimations()
