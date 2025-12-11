@@ -77,11 +77,11 @@ JaguarcinGame/
 │   ├── Tilemap/
 │   └── UI/
 │
-├── docs/
+├── Media/
 │   └── gifs/
 │       ├── main_menu.gif
 │       ├── gameplay.gif
-│       └── settings.gif
+│       └── settings_menu.gif
 │
 ├── README.md
 └── ProjectSettings/
