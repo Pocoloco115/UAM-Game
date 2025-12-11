@@ -19,6 +19,11 @@ public class Player : MonoBehaviour
     [SerializeField] private Vector2 groundCheckSize;
     [SerializeField] private LayerMask groundLayer;
 
+    [Header("Top Check Settings")]
+    [SerializeField] private Transform topCheck;
+    [SerializeField] private Vector2 topCheckSize;
+    [SerializeField] private LayerMask topLayer;
+
     [Header("Wall Check Settings")]
     [SerializeField] private Transform leftWallCheck;
     [SerializeField] private Transform rightWallCheck;
@@ -54,7 +59,7 @@ public class Player : MonoBehaviour
     private bool wasInsideViewport = true;
     private bool lockFlip = false;
     private HashSet<int> platformsId;
-    public int counter = 0;
+    private int counter = 0;
     private KeyCode KeyLeft => InputSettingsManager.GetOrCreate().settings.moveLeft;
     private KeyCode KeyRight => InputSettingsManager.GetOrCreate().settings.moveRight;
     private KeyCode KeyJump => InputSettingsManager.GetOrCreate().settings.jump;
@@ -100,10 +105,7 @@ public class Player : MonoBehaviour
                 spriteRenderer.flipX = true;
             }
         }
-        if (IsGrounded() || isClimbing)
-        {
-            jumpCount = 2;
-        }
+        if (isClimbing) { ReloadJumpCounter(); }
 
         rb2d.linearDamping = isClimbing ? climbingDrag : originalDrag;
         rb2d.gravityScale = isDashing ? 0 : currGravityScale;
@@ -156,11 +158,11 @@ public class Player : MonoBehaviour
 
     private void JumpInputHandler()
     {
-        if (isDashing) return;
+        if (isDashing) { return; }
         if (Input.GetKeyDown(KeyJump) && IsGrounded() && !isClimbing)
         {
             jumpPressed = true;
-            jumpCount--;
+            SubstractJumpCounter();
         }
     }
 
@@ -169,13 +171,13 @@ public class Player : MonoBehaviour
         if (Input.GetKeyDown(KeyJump) && isClimbing && !IsGrounded())
         {
             wallJumpPressed = true;
-            jumpCount--;
+            SubstractJumpCounter();
         }
     }
 
     private void DashInputHandler()
     {
-        if (isWalljumpLock || wallJumpPressed) return;
+        if (isWalljumpLock || wallJumpPressed) { return; }
 
         if (isClimbing)
         {
@@ -200,7 +202,7 @@ public class Player : MonoBehaviour
         if (Input.GetKeyDown(KeyJump) && jumpCount > 0 && !IsGrounded() && !isClimbing)
         {
             jumpPressed = true;
-            jumpCount--;
+            SubstractJumpCounter();
         }
     }
 
@@ -298,6 +300,11 @@ public class Player : MonoBehaviour
         return Physics2D.OverlapBox(rightWallCheck.position, wallCheckSize, 0, wallLayer)&& !IsGrounded();
     }
 
+    private bool IsTopBlocked()
+    {
+        return Physics2D.OverlapBox(topCheck.position, topCheckSize, 0, topLayer);
+    }
+
 
     public IEnumerator TakeDamage()
     {
@@ -332,11 +339,26 @@ public class Player : MonoBehaviour
 
     public int GetCounter() { return counter; }
 
+    private void ReloadJumpCounter()
+    {
+        if((IsGrounded() || isClimbing) && !IsTopBlocked())
+        {
+            jumpCount = 2;
+        }
+    }
+
+    private void SubstractJumpCounter()
+    {
+        if(jumpCount <= 0) { return; }
+        jumpCount--;
+    }
+
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision != null)
         {
+            ReloadJumpCounter();
             int currPlatformId = collision.gameObject.GetInstanceID();
             if(platformsId.Contains(currPlatformId))
             {
@@ -408,5 +430,8 @@ public class Player : MonoBehaviour
 
         Gizmos.color = IsRightWallCheckColliding() ? Color.green : Color.red;
         Gizmos.DrawCube(rightWallCheck.position, wallCheckSize);
+
+        Gizmos.color = IsTopBlocked() ? Color.green : Color.red;
+        Gizmos.DrawCube(topCheck.position, topCheckSize);
     }
 }
