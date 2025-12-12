@@ -47,7 +47,7 @@ In both cases, Jaguarcín **explodes**.
 ## ⚙️ Settings Menu (Keybinds)
 ![Badge](https://img.shields.io/badge/Preview-Settings-orange)
 
-![Settings](Media/gifs/settings_menu.gif)
+![Settings](Media/settings_menu.gif)
 
 ---
 
