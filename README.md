@@ -59,6 +59,16 @@ In both cases, Jaguarcín **explodes**.
 
 ---
 
+## 🚀 Running the Game
+### Download the build (Release)
+
+1. Go to the **Releases** section of the repository
+2. Download the `Builds.zip`
+3. Unzip the `.zip`
+4. Run the game (UAM game.exe)
+
+---
+
 ## 🗂 Project Structure
 ```text
 JaguarcinGame/
