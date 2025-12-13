@@ -2,6 +2,7 @@
 
 ![Unity](https://img.shields.io/badge/Engine-Unity-black?logo=unity&logoColor=white)
 ![C#](https://img.shields.io/badge/Language-C%23-239120?logo=csharp&logoColor=white)
+![.NET](https://img.shields.io/badge/Framework-.NET-512BD4?logo=.net&logoColor=white)
 ![2D Platformer](https://img.shields.io/badge/Genre-2D_Platformer-blue)
 ![Status](https://img.shields.io/badge/Status-In_Development-yellow)
 ![License](https://img.shields.io/badge/License-Custom-lightgrey)
