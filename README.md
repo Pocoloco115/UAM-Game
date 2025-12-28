@@ -12,6 +12,15 @@ The project is developed using the **Unity** engine and sprite creation tools su
 
 ---
 
+<h1 align="center">🧁 Developed by <b>Muffin Studios</b></h1>
+
+<div align="center">
+  <img src="Media/Idle.png" alt="A Game About Killing Goats or Something Logo" width="150" style="display:inline-block; margin-right:20px;"/>
+  <img src="Media/Muffin studios png logo.png" alt="Muffin Studio Logo" width="200" style="display:inline-block;"/>
+</div>
+
+---
+
 ## 🕹 Key Features
 
 ### Gameplay
