@@ -1,0 +1,679 @@
+fileFormatVersion: 2
+guid: dbacec6d513e1024dbf2cab82c26e814
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -6694019925839285747
+    second: UAM jaguar death gif_0
+  - first:
+      213: 5293701892632745165
+    second: UAM jaguar death gif_1
+  - first:
+      213: -3718756596174954217
+    second: UAM jaguar death gif_2
+  - first:
+      213: 1427648217277994100
+    second: UAM jaguar death gif_3
+  - first:
+      213: 6671302611023272845
+    second: UAM jaguar death gif_4
+  - first:
+      213: -8715838948049586521
+    second: UAM jaguar death gif_5
+  - first:
+      213: 8330205341181609353
+    second: UAM jaguar death gif_6
+  - first:
+      213: -2305742239455823074
+    second: UAM jaguar death gif_7
+  - first:
+      213: 287041691856788255
+    second: UAM jaguar death gif_8
+  - first:
+      213: 3331622105275131337
+    second: UAM jaguar death gif_9
+  - first:
+      213: 8547988624385279673
+    second: UAM jaguar death gif_10
+  - first:
+      213: 5687248774738596456
+    second: UAM jaguar death gif_11
+  - first:
+      213: 1439415030434945433
+    second: UAM jaguar death gif_12
+  - first:
+      213: 3802286553391746921
+    second: UAM jaguar death gif_13
+  - first:
+      213: 6987338474116152362
+    second: UAM jaguar death gif_14
+  - first:
+      213: -3178371417267588972
+    second: UAM jaguar death gif_15
+  - first:
+      213: 5791194293356323450
+    second: UAM jaguar death gif_16
+  - first:
+      213: -1936598163454286181
+    second: UAM jaguar death gif_17
+  - first:
+      213: 2473172523591024349
+    second: UAM jaguar death gif_18
+  - first:
+      213: 7931263299991709226
+    second: UAM jaguar death gif_19
+  - first:
+      213: 4747582059433607763
+    second: UAM jaguar death gif_20
+  - first:
+      213: 2995335323846859457
+    second: UAM jaguar death gif_21
+  - first:
+      213: 5817498444603906557
+    second: UAM jaguar death gif_22
+  - first:
+      213: 2150004613843807266
+    second: UAM jaguar death gif_23
+  - first:
+      213: 6754952224217194862
+    second: UAM jaguar death gif_24
+  - first:
+      213: -4032939792626092447
+    second: UAM jaguar death gif_25
+  - first:
+      213: -6533132871604621909
+    second: UAM jaguar death gif_26
+  - first:
+      213: -7814308814426317736
+    second: UAM jaguar death gif_27
+  - first:
+      213: -1362339283864846731
+    second: UAM jaguar death gif_28
+  - first:
+      213: -5293014740314833661
+    second: UAM jaguar death gif_29
+  - first:
+      213: 3788896966711408226
+    second: UAM jaguar death gif_30
+  - first:
+      213: -6422817756932197027
+    second: UAM jaguar death gif_31
+  - first:
+      213: 7389346764400800634
+    second: UAM jaguar death gif_32
+  - first:
+      213: -8263174430499076285
+    second: UAM jaguar death gif_33
+  - first:
+      213: -3951550248131985930
+    second: UAM jaguar death gif_34
+  - first:
+      213: 1434664682975184001
+    second: UAM jaguar death gif_35
+  - first:
+      213: -647578424033623981
+    second: UAM jaguar death gif_36
+  - first:
+      213: 4620247635651954391
+    second: UAM jaguar death gif_37
+  - first:
+      213: 899130310737835318
+    second: UAM jaguar death gif_38
+  - first:
+      213: -6382635084640629361
+    second: UAM jaguar death gif_39
+  - first:
+      213: -7564028105139293517
+    second: UAM jaguar death gif_40
+  - first:
+      213: 1615286830408015963
+    second: UAM jaguar death gif_41
+  - first:
+      213: 868556800876297520
+    second: UAM jaguar death gif_42
+  - first:
+      213: -2310365949841299088
+    second: UAM jaguar death gif_43
+  - first:
+      213: 8493230988051148702
+    second: UAM jaguar death gif_44
+  - first:
+      213: 8133606412795240283
+    second: UAM jaguar death gif_45
+  - first:
+      213: -736843212450661833
+    second: UAM jaguar death gif_46
+  - first:
+      213: 440036190604828166
+    second: UAM jaguar death gif_47
+  - first:
+      213: -2355558584743632809
+    second: UAM jaguar death gif_48
+  - first:
+      213: -2477681971508297002
+    second: UAM jaguar death gif_49
+  - first:
+      213: 7365184816862395839
+    second: UAM jaguar death gif_50
+  - first:
+      213: -3900983139183808416
+    second: UAM jaguar death gif_51
+  - first:
+      213: 1050150374436119845
+    second: UAM jaguar death gif_52
+  - first:
+      213: -7212578325542925952
+    second: UAM jaguar death gif_53
+  - first:
+      213: -1783097006221360573
+    second: UAM jaguar death gif_54
+  - first:
+      213: -3190813529061563316
+    second: UAM jaguar death gif_55
+  - first:
+      213: -7888868002979737185
+    second: UAM jaguar death gif_56
+  - first:
+      213: 6482893121446621507
+    second: UAM jaguar death gif_57
+  - first:
+      213: -7022180182937842109
+    second: UAM jaguar death gif_58
+  - first:
+      213: -4478833579916070019
+    second: UAM jaguar death gif_59
+  - first:
+      213: -4366433581426768821
+    second: UAM jaguar death gif_60
+  - first:
+      213: -1055803129259476907
+    second: UAM jaguar death gif_61
+  - first:
+      213: -6399926644378687847
+    second: UAM jaguar death gif_62
+  - first:
+      213: -245327895592960898
+    second: UAM jaguar death gif_63
+  - first:
+      213: -3880393498752028264
+    second: UAM jaguar death gif_64
+  - first:
+      213: 6949138854269582402
+    second: UAM jaguar death gif_65
+  - first:
+      213: 4781657852507022713
+    second: UAM jaguar death gif_66
+  - first:
+      213: -4697777830446264530
+    second: UAM jaguar death gif_67
+  - first:
+      213: -5942551664393214311
+    second: UAM jaguar death gif_68
+  - first:
+      213: -4197019159320199637
+    second: UAM jaguar death gif_69
+  - first:
+      213: -6766384172751922563
+    second: UAM jaguar death gif_70
+  - first:
+      213: -5547144639836222171
+    second: UAM jaguar death gif_71
+  - first:
+      213: -8527574192780721605
+    second: UAM jaguar death gif_72
+  - first:
+      213: -2495416286233166326
+    second: UAM jaguar death gif_73
+  - first:
+      213: 1210633372340507980
+    second: UAM jaguar death gif_74
+  - first:
+      213: 2609863081345484396
+    second: UAM jaguar death gif_75
+  - first:
+      213: -975883655672461238
+    second: UAM jaguar death gif_76
+  - first:
+      213: 6612597346495264442
+    second: UAM jaguar death gif_77
+  - first:
+      213: -1614250325824572825
+    second: UAM jaguar death gif_78
+  - first:
+      213: 6055539417763215799
+    second: UAM jaguar death gif_79
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 600
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: UAM jaguar death gif_0
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 3103
+        width: 706
+        height: 962
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d0276f808501a13a0800000000000000
+      internalID: -6694019925839285747
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UAM jaguar death gif_1
+      rect:
+        serializedVersion: 2
+        x: 1151
+        y: 3103
+        width: 706
+        height: 962
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dc41039f2d1077940800000000000000
+      internalID: 5293701892632745165
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UAM jaguar death gif_2
+      rect:
+        serializedVersion: 2
+        x: 2175
+        y: 3103
+        width: 738
+        height: 993
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 711e9de1492546cc0800000000000000
+      internalID: -3718756596174954217
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UAM jaguar death gif_3
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 2079
+        width: 738
+        height: 962
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 47413175d7600d310800000000000000
+      internalID: 1427648217277994100
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UAM jaguar death gif_4
+      rect:
+        serializedVersion: 2
+        x: 1122
+        y: 2111
+        width: 735
+        height: 930
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d8b9d2fe06a359c50800000000000000
+      internalID: 6671302611023272845
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UAM jaguar death gif_5
+      rect:
+        serializedVersion: 2
+        x: 2137
+        y: 2106
+        width: 773
+        height: 967
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7a67dfdb7ae1b0780800000000000000
+      internalID: -8715838948049586521
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UAM jaguar death gif_13
+      rect:
+        serializedVersion: 2
+        x: 1151
+        y: 2271
+        width: 66
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 96fc825997f64c430800000000000000
+      internalID: 3802286553391746921
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UAM jaguar death gif_20
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 1055
+        width: 845
+        height: 963
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 352ce82babcc2e140800000000000000
+      internalID: 4747582059433607763
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UAM jaguar death gif_21
+      rect:
+        serializedVersion: 2
+        x: 1055
+        y: 1018
+        width: 961
+        height: 997
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1ca52196b91919920800000000000000
+      internalID: 2995335323846859457
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UAM jaguar death gif_22
+      rect:
+        serializedVersion: 2
+        x: 2034
+        y: 1021
+        width: 1038
+        height: 1028
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: df9d0005308ebb050800000000000000
+      internalID: 5817498444603906557
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UAM jaguar death gif_44
+      rect:
+        serializedVersion: 2
+        x: 319
+        y: 1375
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e9fe026a5940ed570800000000000000
+      internalID: 8493230988051148702
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 769f9d1d7e657384fafc79de7b145769
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      UAM jaguar death gif_0: -6694019925839285747
+      UAM jaguar death gif_1: 5293701892632745165
+      UAM jaguar death gif_10: 8547988624385279673
+      UAM jaguar death gif_11: 5687248774738596456
+      UAM jaguar death gif_12: 1439415030434945433
+      UAM jaguar death gif_13: 3802286553391746921
+      UAM jaguar death gif_14: 6987338474116152362
+      UAM jaguar death gif_15: -3178371417267588972
+      UAM jaguar death gif_16: 5791194293356323450
+      UAM jaguar death gif_17: -1936598163454286181
+      UAM jaguar death gif_18: 2473172523591024349
+      UAM jaguar death gif_19: 7931263299991709226
+      UAM jaguar death gif_2: -3718756596174954217
+      UAM jaguar death gif_20: 4747582059433607763
+      UAM jaguar death gif_21: 2995335323846859457
+      UAM jaguar death gif_22: 5817498444603906557
+      UAM jaguar death gif_23: 2150004613843807266
+      UAM jaguar death gif_24: 6754952224217194862
+      UAM jaguar death gif_25: -4032939792626092447
+      UAM jaguar death gif_26: -6533132871604621909
+      UAM jaguar death gif_27: -7814308814426317736
+      UAM jaguar death gif_28: -1362339283864846731
+      UAM jaguar death gif_29: -5293014740314833661
+      UAM jaguar death gif_3: 1427648217277994100
+      UAM jaguar death gif_30: 3788896966711408226
+      UAM jaguar death gif_31: -6422817756932197027
+      UAM jaguar death gif_32: 7389346764400800634
+      UAM jaguar death gif_33: -8263174430499076285
+      UAM jaguar death gif_34: -3951550248131985930
+      UAM jaguar death gif_35: 1434664682975184001
+      UAM jaguar death gif_36: -647578424033623981
+      UAM jaguar death gif_37: 4620247635651954391
+      UAM jaguar death gif_38: 899130310737835318
+      UAM jaguar death gif_39: -6382635084640629361
+      UAM jaguar death gif_4: 6671302611023272845
+      UAM jaguar death gif_40: -7564028105139293517
+      UAM jaguar death gif_41: 1615286830408015963
+      UAM jaguar death gif_42: 868556800876297520
+      UAM jaguar death gif_43: -2310365949841299088
+      UAM jaguar death gif_44: 8493230988051148702
+      UAM jaguar death gif_45: 8133606412795240283
+      UAM jaguar death gif_46: -736843212450661833
+      UAM jaguar death gif_47: 440036190604828166
+      UAM jaguar death gif_48: -2355558584743632809
+      UAM jaguar death gif_49: -2477681971508297002
+      UAM jaguar death gif_5: -8715838948049586521
+      UAM jaguar death gif_50: 7365184816862395839
+      UAM jaguar death gif_51: -3900983139183808416
+      UAM jaguar death gif_52: 1050150374436119845
+      UAM jaguar death gif_53: -7212578325542925952
+      UAM jaguar death gif_54: -1783097006221360573
+      UAM jaguar death gif_55: -3190813529061563316
+      UAM jaguar death gif_56: -7888868002979737185
+      UAM jaguar death gif_57: 6482893121446621507
+      UAM jaguar death gif_58: -7022180182937842109
+      UAM jaguar death gif_59: -4478833579916070019
+      UAM jaguar death gif_6: 8330205341181609353
+      UAM jaguar death gif_60: -4366433581426768821
+      UAM jaguar death gif_61: -1055803129259476907
+      UAM jaguar death gif_62: -6399926644378687847
+      UAM jaguar death gif_63: -245327895592960898
+      UAM jaguar death gif_64: -3880393498752028264
+      UAM jaguar death gif_65: 6949138854269582402
+      UAM jaguar death gif_66: 4781657852507022713
+      UAM jaguar death gif_67: -4697777830446264530
+      UAM jaguar death gif_68: -5942551664393214311
+      UAM jaguar death gif_69: -4197019159320199637
+      UAM jaguar death gif_7: -2305742239455823074
+      UAM jaguar death gif_70: -6766384172751922563
+      UAM jaguar death gif_71: -5547144639836222171
+      UAM jaguar death gif_72: -8527574192780721605
+      UAM jaguar death gif_73: -2495416286233166326
+      UAM jaguar death gif_74: 1210633372340507980
+      UAM jaguar death gif_75: 2609863081345484396
+      UAM jaguar death gif_76: -975883655672461238
+      UAM jaguar death gif_77: 6612597346495264442
+      UAM jaguar death gif_78: -1614250325824572825
+      UAM jaguar death gif_79: 6055539417763215799
+      UAM jaguar death gif_8: 287041691856788255
+      UAM jaguar death gif_9: 3331622105275131337
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

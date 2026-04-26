@@ -60,13 +60,32 @@ public class Player : MonoBehaviour
     private bool lockFlip = false;
     private HashSet<int> platformsId;
     private int counter = 0;
+    public int coinCounter = 0;
     private KeyCode KeyLeft => InputSettingsManager.GetOrCreate().settings.moveLeft;
     private KeyCode KeyRight => InputSettingsManager.GetOrCreate().settings.moveRight;
     private KeyCode KeyJump => InputSettingsManager.GetOrCreate().settings.jump;
     private KeyCode KeyDash => InputSettingsManager.GetOrCreate().settings.dash;
+    public static Player Instance { get; private set; }
 
+    private void Awake()
+    {
+        if (Instance != null && Instance != this)
+        {
+            Destroy(gameObject);
+            return;
+        }
+        Instance = this;
+    }
+    private void OnDestroy()
+    {
+        if (Instance == this)
+        {
+            Instance = null;
+        }
+    }
     void Start()
     {
+        coinCounter = 0;
         rb2d = GetComponent<Rigidbody2D>();
         spriteRenderer = GetComponent<SpriteRenderer>();
         originalDrag = rb2d.linearDamping;
@@ -74,6 +93,7 @@ public class Player : MonoBehaviour
         playerTransform = GetComponent<Transform>();
         animator = GetComponent<Animator>();
         platformsId = new HashSet<int>();
+        mainCamera = Camera.main;
     }
 
     void Update()
@@ -306,7 +326,7 @@ public class Player : MonoBehaviour
     }
 
 
-    public IEnumerator TakeDamage()
+    public void TakeDamage()
     {
         isDying = true;
         lockFlip = true;
@@ -314,7 +334,9 @@ public class Player : MonoBehaviour
         rb2d.gravityScale = 0;
         rb2d.constraints = RigidbodyConstraints2D.FreezePosition;
         mainCamera.GetComponent<CameraController>().FreezeCamera();
-        yield return new WaitForSeconds(0.30f);
+    }
+    public void ReloadScene()
+    {
         UnityEngine.SceneManagement.SceneManager.LoadScene(UnityEngine.SceneManagement.SceneManager.GetActiveScene().name);
     }
     private void CheckPlayerPosition()
@@ -327,7 +349,7 @@ public class Player : MonoBehaviour
 
         if (wasInsideViewport && !isInsideViewport)
         {
-            StartCoroutine(TakeDamage());
+            TakeDamage();
         }
         wasInsideViewport = isInsideViewport;
     }
@@ -408,7 +430,7 @@ public class Player : MonoBehaviour
 
         animator.SetBool("doubleJump",
             !grounded &&
-            jumpCount == 1 &&
+            jumpCount == 0 &&
             velY > 0.1f &&
             !isDashing &&
             !isClimbing

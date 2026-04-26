@@ -1,0 +1,659 @@
+fileFormatVersion: 2
+guid: 556931a7f6e2e4048ac35502303d362c
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -8241966904344981377
+    second: sprite-buff-processed-image (5)_0
+  - first:
+      213: -7968220313915051772
+    second: sprite-buff-processed-image (5)_1
+  - first:
+      213: -7882764473079202302
+    second: sprite-buff-processed-image (5)_2
+  - first:
+      213: 3303191801701104718
+    second: sprite-buff-processed-image (5)_3
+  - first:
+      213: 5245745096979752253
+    second: sprite-buff-processed-image (5)_4
+  - first:
+      213: -1762794330292401859
+    second: sprite-buff-processed-image (5)_5
+  - first:
+      213: -5857709722912158684
+    second: sprite-buff-processed-image (5)_6
+  - first:
+      213: 6537993069363730972
+    second: sprite-buff-processed-image (5)_7
+  - first:
+      213: -7709423420783161723
+    second: sprite-buff-processed-image (5)_8
+  - first:
+      213: 7523933996845257514
+    second: sprite-buff-processed-image (5)_9
+  - first:
+      213: -7501947838248644766
+    second: sprite-buff-processed-image (5)_10
+  - first:
+      213: 2850717123766794873
+    second: sprite-buff-processed-image (5)_11
+  - first:
+      213: -657897642598300510
+    second: sprite-buff-processed-image (5)_12
+  - first:
+      213: 7055609279603858701
+    second: sprite-buff-processed-image (5)_13
+  - first:
+      213: 6230376798595141075
+    second: sprite-buff-processed-image (5)_14
+  - first:
+      213: 4325365642962797549
+    second: sprite-buff-processed-image (5)_15
+  - first:
+      213: -2660112808360057562
+    second: sprite-buff-processed-image (5)_16
+  - first:
+      213: -3687616210388366150
+    second: sprite-buff-processed-image (5)_17
+  - first:
+      213: -7535307769202175094
+    second: sprite-buff-processed-image (5)_18
+  - first:
+      213: 8808278411545453278
+    second: sprite-buff-processed-image (5)_19
+  - first:
+      213: -6200119753034435813
+    second: sprite-buff-processed-image (5)_20
+  - first:
+      213: 7646433311303175876
+    second: sprite-buff-processed-image (5)_21
+  - first:
+      213: -1703094619398039871
+    second: sprite-buff-processed-image (5)_22
+  - first:
+      213: 3994516863675664683
+    second: sprite-buff-processed-image (5)_23
+  - first:
+      213: 2294866994918930793
+    second: sprite-buff-processed-image (5)_24
+  - first:
+      213: -6235136753079838324
+    second: sprite-buff-processed-image (5)_25
+  - first:
+      213: -4882950133655392609
+    second: sprite-buff-processed-image (5)_26
+  - first:
+      213: -6219149731893089701
+    second: sprite-buff-processed-image (5)_27
+  - first:
+      213: -8767446665469899070
+    second: sprite-buff-processed-image (5)_28
+  - first:
+      213: -8541598267195481570
+    second: sprite-buff-processed-image (5)_29
+  - first:
+      213: -495503667503227391
+    second: sprite-buff-processed-image (5)_30
+  - first:
+      213: 1748866017012250670
+    second: sprite-buff-processed-image (5)_31
+  - first:
+      213: 3675829952930826253
+    second: sprite-buff-processed-image (5)_32
+  - first:
+      213: 7845549643292159536
+    second: sprite-buff-processed-image (5)_33
+  - first:
+      213: -8608067868403417271
+    second: sprite-buff-processed-image (5)_34
+  - first:
+      213: 6941486169149850855
+    second: sprite-buff-processed-image (5)_35
+  - first:
+      213: -518693268977156890
+    second: sprite-buff-processed-image (5)_36
+  - first:
+      213: 4683230475143050803
+    second: sprite-buff-processed-image (5)_37
+  - first:
+      213: -616119893813690285
+    second: sprite-buff-processed-image (5)_38
+  - first:
+      213: -6197694834080082402
+    second: sprite-buff-processed-image (5)_39
+  - first:
+      213: -537765813237405363
+    second: sprite-buff-processed-image (5)_40
+  - first:
+      213: 2356252612473277493
+    second: sprite-buff-processed-image (5)_41
+  - first:
+      213: -770160808084595148
+    second: sprite-buff-processed-image (5)_42
+  - first:
+      213: 4301604791467627229
+    second: sprite-buff-processed-image (5)_43
+  - first:
+      213: 3346611410945218662
+    second: sprite-buff-processed-image (5)_44
+  - first:
+      213: -8340846709735541309
+    second: sprite-buff-processed-image (5)_45
+  - first:
+      213: 718803159221256159
+    second: sprite-buff-processed-image (5)_46
+  - first:
+      213: 8923541455849821961
+    second: sprite-buff-processed-image (5)_47
+  - first:
+      213: -7323104802428327358
+    second: sprite-buff-processed-image (5)_48
+  - first:
+      213: 152459879747943893
+    second: sprite-buff-processed-image (5)_49
+  - first:
+      213: 4610968000168064192
+    second: sprite-buff-processed-image (5)_50
+  - first:
+      213: -690424763004795512
+    second: sprite-buff-processed-image (5)_51
+  - first:
+      213: -1530691034614707254
+    second: sprite-buff-processed-image (5)_52
+  - first:
+      213: 1296797034864586613
+    second: sprite-buff-processed-image (5)_53
+  - first:
+      213: 2611975963525089127
+    second: sprite-buff-processed-image (5)_54
+  - first:
+      213: -6686259857794322731
+    second: sprite-buff-processed-image (5)_55
+  - first:
+      213: -377120669028751631
+    second: sprite-buff-processed-image (5)_56
+  - first:
+      213: -5110101195079523477
+    second: sprite-buff-processed-image (5)_57
+  - first:
+      213: 5380540964917443743
+    second: sprite-buff-processed-image (5)_58
+  - first:
+      213: 3627890873007825826
+    second: sprite-buff-processed-image (5)_59
+  - first:
+      213: 9038339330291770916
+    second: sprite-buff-processed-image (5)_60
+  - first:
+      213: 3164977071570791631
+    second: sprite-buff-processed-image (5)_61
+  - first:
+      213: -4370485977427494764
+    second: sprite-buff-processed-image (5)_62
+  - first:
+      213: 329482299207205776
+    second: sprite-buff-processed-image (5)_63
+  - first:
+      213: 6951892853801398198
+    second: sprite-buff-processed-image (5)_64
+  - first:
+      213: 7583000004681028099
+    second: sprite-buff-processed-image (5)_65
+  - first:
+      213: 812905910911378
+    second: sprite-buff-processed-image (5)_66
+  - first:
+      213: 7376162265417034863
+    second: sprite-buff-processed-image (5)_67
+  - first:
+      213: -5010347154454216766
+    second: sprite-buff-processed-image (5)_68
+  - first:
+      213: 6706230731123223655
+    second: sprite-buff-processed-image (5)_69
+  - first:
+      213: -4472988108924119705
+    second: sprite-buff-processed-image (5)_70
+  - first:
+      213: 2593292466013704686
+    second: sprite-buff-processed-image (5)_71
+  - first:
+      213: 2534027050672568408
+    second: sprite-buff-processed-image (5)_72
+  - first:
+      213: -4231545710621922452
+    second: sprite-buff-processed-image (5)_73
+  - first:
+      213: -5016456597773465080
+    second: sprite-buff-processed-image (5)_74
+  - first:
+      213: -8923755675512084286
+    second: sprite-buff-processed-image (5)_75
+  - first:
+      213: -9194012552229486926
+    second: sprite-buff-processed-image (5)_76
+  - first:
+      213: 7807634301867314009
+    second: sprite-buff-processed-image (5)_77
+  - first:
+      213: -6556313316289927030
+    second: sprite-buff-processed-image (5)_78
+  - first:
+      213: 4722592940675365900
+    second: sprite-buff-processed-image (5)_79
+  - first:
+      213: 7185601162815802109
+    second: sprite-buff-processed-image (5)_80
+  - first:
+      213: -8718604311346570010
+    second: sprite-buff-processed-image (5)_81
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 210
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: sprite-buff-processed-image (5)_0
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 969
+        width: 223
+        height: 302
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f70ddffa4c6ae9d80800000000000000
+      internalID: -8241966904344981377
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite-buff-processed-image (5)_1
+      rect:
+        serializedVersion: 2
+        x: 359
+        y: 969
+        width: 232
+        height: 302
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 401ba0987d13b6190800000000000000
+      internalID: -7968220313915051772
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite-buff-processed-image (5)_2
+      rect:
+        serializedVersion: 2
+        x: 678
+        y: 969
+        width: 233
+        height: 302
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 20e7b06f97bca9290800000000000000
+      internalID: -7882764473079202302
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite-buff-processed-image (5)_3
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 649
+        width: 233
+        height: 303
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e4c706d417b47dd20800000000000000
+      internalID: 3303191801701104718
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite-buff-processed-image (5)_4
+      rect:
+        serializedVersion: 2
+        x: 369
+        y: 659
+        width: 212
+        height: 293
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d35a9bf5f51acc840800000000000000
+      internalID: 5245745096979752253
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite-buff-processed-image (5)_5
+      rect:
+        serializedVersion: 2
+        x: 669
+        y: 660
+        width: 241
+        height: 292
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d3949d275eb4987e0800000000000000
+      internalID: -1762794330292401859
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: death_0
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 330
+        width: 259
+        height: 302
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 51be827f643848b42b3646d6ac3118fe
+      internalID: 1456685391
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: death_1
+      rect:
+        serializedVersion: 2
+        x: 330
+        y: 320
+        width: 289
+        height: 310
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0977abd4a0873c846a4825548c7e16ef
+      internalID: -1311380884
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: death_2
+      rect:
+        serializedVersion: 2
+        x: 628
+        y: 320
+        width: 332
+        height: 320
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ee489a42100fba4584671f82cc63ba8
+      internalID: 1272510140
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: e037c0791bbbefa4b8c60c77ff3ee0a8
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      death_0: 1456685391
+      death_1: -1311380884
+      death_2: 1272510140
+      sprite-buff-processed-image (5)_0: -8241966904344981377
+      sprite-buff-processed-image (5)_1: -7968220313915051772
+      sprite-buff-processed-image (5)_10: -7501947838248644766
+      sprite-buff-processed-image (5)_11: 2850717123766794873
+      sprite-buff-processed-image (5)_12: -657897642598300510
+      sprite-buff-processed-image (5)_13: 7055609279603858701
+      sprite-buff-processed-image (5)_14: 6230376798595141075
+      sprite-buff-processed-image (5)_15: 4325365642962797549
+      sprite-buff-processed-image (5)_16: -2660112808360057562
+      sprite-buff-processed-image (5)_17: -3687616210388366150
+      sprite-buff-processed-image (5)_18: -7535307769202175094
+      sprite-buff-processed-image (5)_19: 8808278411545453278
+      sprite-buff-processed-image (5)_2: -7882764473079202302
+      sprite-buff-processed-image (5)_20: -6200119753034435813
+      sprite-buff-processed-image (5)_21: 7646433311303175876
+      sprite-buff-processed-image (5)_22: -1703094619398039871
+      sprite-buff-processed-image (5)_23: 3994516863675664683
+      sprite-buff-processed-image (5)_24: 2294866994918930793
+      sprite-buff-processed-image (5)_25: -6235136753079838324
+      sprite-buff-processed-image (5)_26: -4882950133655392609
+      sprite-buff-processed-image (5)_27: -6219149731893089701
+      sprite-buff-processed-image (5)_28: -8767446665469899070
+      sprite-buff-processed-image (5)_29: -8541598267195481570
+      sprite-buff-processed-image (5)_3: 3303191801701104718
+      sprite-buff-processed-image (5)_30: -495503667503227391
+      sprite-buff-processed-image (5)_31: 1748866017012250670
+      sprite-buff-processed-image (5)_32: 3675829952930826253
+      sprite-buff-processed-image (5)_33: 7845549643292159536
+      sprite-buff-processed-image (5)_34: -8608067868403417271
+      sprite-buff-processed-image (5)_35: 6941486169149850855
+      sprite-buff-processed-image (5)_36: -518693268977156890
+      sprite-buff-processed-image (5)_37: 4683230475143050803
+      sprite-buff-processed-image (5)_38: -616119893813690285
+      sprite-buff-processed-image (5)_39: -6197694834080082402
+      sprite-buff-processed-image (5)_4: 5245745096979752253
+      sprite-buff-processed-image (5)_40: -537765813237405363
+      sprite-buff-processed-image (5)_41: 2356252612473277493
+      sprite-buff-processed-image (5)_42: -770160808084595148
+      sprite-buff-processed-image (5)_43: 4301604791467627229
+      sprite-buff-processed-image (5)_44: 3346611410945218662
+      sprite-buff-processed-image (5)_45: -8340846709735541309
+      sprite-buff-processed-image (5)_46: 718803159221256159
+      sprite-buff-processed-image (5)_47: 8923541455849821961
+      sprite-buff-processed-image (5)_48: -7323104802428327358
+      sprite-buff-processed-image (5)_49: 152459879747943893
+      sprite-buff-processed-image (5)_5: -1762794330292401859
+      sprite-buff-processed-image (5)_50: 4610968000168064192
+      sprite-buff-processed-image (5)_51: -690424763004795512
+      sprite-buff-processed-image (5)_52: -1530691034614707254
+      sprite-buff-processed-image (5)_53: 1296797034864586613
+      sprite-buff-processed-image (5)_54: 2611975963525089127
+      sprite-buff-processed-image (5)_55: -6686259857794322731
+      sprite-buff-processed-image (5)_56: -377120669028751631
+      sprite-buff-processed-image (5)_57: -5110101195079523477
+      sprite-buff-processed-image (5)_58: 5380540964917443743
+      sprite-buff-processed-image (5)_59: 3627890873007825826
+      sprite-buff-processed-image (5)_6: -5857709722912158684
+      sprite-buff-processed-image (5)_60: 9038339330291770916
+      sprite-buff-processed-image (5)_61: 3164977071570791631
+      sprite-buff-processed-image (5)_62: -4370485977427494764
+      sprite-buff-processed-image (5)_63: 329482299207205776
+      sprite-buff-processed-image (5)_64: 6951892853801398198
+      sprite-buff-processed-image (5)_65: 7583000004681028099
+      sprite-buff-processed-image (5)_66: 812905910911378
+      sprite-buff-processed-image (5)_67: 7376162265417034863
+      sprite-buff-processed-image (5)_68: -5010347154454216766
+      sprite-buff-processed-image (5)_69: 6706230731123223655
+      sprite-buff-processed-image (5)_7: 6537993069363730972
+      sprite-buff-processed-image (5)_70: -4472988108924119705
+      sprite-buff-processed-image (5)_71: 2593292466013704686
+      sprite-buff-processed-image (5)_72: 2534027050672568408
+      sprite-buff-processed-image (5)_73: -4231545710621922452
+      sprite-buff-processed-image (5)_74: -5016456597773465080
+      sprite-buff-processed-image (5)_75: -8923755675512084286
+      sprite-buff-processed-image (5)_76: -9194012552229486926
+      sprite-buff-processed-image (5)_77: 7807634301867314009
+      sprite-buff-processed-image (5)_78: -6556313316289927030
+      sprite-buff-processed-image (5)_79: 4722592940675365900
+      sprite-buff-processed-image (5)_8: -7709423420783161723
+      sprite-buff-processed-image (5)_80: 7185601162815802109
+      sprite-buff-processed-image (5)_81: -8718604311346570010
+      sprite-buff-processed-image (5)_9: 7523933996845257514
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

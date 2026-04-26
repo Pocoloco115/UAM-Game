@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a925bf76120b20b4884fa620595a2cbd, type: 3}
+  m_Name: FIA
+  m_EditorClassIdentifier: Assembly-CSharp::PlayerSO
+  id: fia
+  playerName: FIA
+  playerPrefab: {fileID: 6570374401882776173, guid: 93b5bd7fc23bd4a44ad8f638057a2cfe, type: 3}
+  menuSprite: {fileID: -3938955916652249623, guid: 72b80fce105c0bd4492811f2eb499e65, type: 3}
+  unlockType: 1
+  price: 600
+  requiredLevelName: 

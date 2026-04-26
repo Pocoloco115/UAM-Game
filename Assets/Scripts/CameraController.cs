@@ -2,9 +2,6 @@ using UnityEngine;
 
 public class CameraController : MonoBehaviour
 {
-    [Header("References")]
-    public Transform player;
-
     [Header("Auto Scroll")]
     public float autoScrollSpeed = 1f;  
 
@@ -13,10 +10,12 @@ public class CameraController : MonoBehaviour
     public float followThreshold = 1f; 
 
     private float highestY;
+    private Transform player;
 
     void Start()
     {
         highestY = transform.position.y;
+        player = Player.Instance.transform;
     }
 
     void Update()

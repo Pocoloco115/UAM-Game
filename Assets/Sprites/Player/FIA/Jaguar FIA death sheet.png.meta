@@ -1,0 +1,661 @@
+fileFormatVersion: 2
+guid: 175aaffc86449ad4aa7b08118062fb85
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 159997412873230688
+    second: Jaguar FIA death sheet_0
+  - first:
+      213: -4458160863189377742
+    second: Jaguar FIA death sheet_1
+  - first:
+      213: -8402083832884760698
+    second: Jaguar FIA death sheet_2
+  - first:
+      213: 5231176210771105495
+    second: Jaguar FIA death sheet_3
+  - first:
+      213: -361454251293716990
+    second: Jaguar FIA death sheet_4
+  - first:
+      213: -512914455120926307
+    second: Jaguar FIA death sheet_5
+  - first:
+      213: 6969559921559735518
+    second: Jaguar FIA death sheet_6
+  - first:
+      213: 1708042365130914274
+    second: Jaguar FIA death sheet_7
+  - first:
+      213: -5273053414427733372
+    second: Jaguar FIA death sheet_8
+  - first:
+      213: 521788791095448724
+    second: Jaguar FIA death sheet_9
+  - first:
+      213: 3244995216422762555
+    second: Jaguar FIA death sheet_10
+  - first:
+      213: 1554088964825191126
+    second: Jaguar FIA death sheet_11
+  - first:
+      213: -5557751341463099284
+    second: Jaguar FIA death sheet_12
+  - first:
+      213: 9063050247131012059
+    second: Jaguar FIA death sheet_13
+  - first:
+      213: -5252873198349545150
+    second: Jaguar FIA death sheet_14
+  - first:
+      213: -4367645792635394343
+    second: Jaguar FIA death sheet_15
+  - first:
+      213: 6541369011721988363
+    second: Jaguar FIA death sheet_16
+  - first:
+      213: -2509433900552604657
+    second: Jaguar FIA death sheet_17
+  - first:
+      213: 6301354472353891716
+    second: Jaguar FIA death sheet_18
+  - first:
+      213: 8508193976325640446
+    second: Jaguar FIA death sheet_19
+  - first:
+      213: 495215609405313692
+    second: Jaguar FIA death sheet_20
+  - first:
+      213: 8463945412200637614
+    second: Jaguar FIA death sheet_21
+  - first:
+      213: 3893461237894507144
+    second: Jaguar FIA death sheet_22
+  - first:
+      213: -3715173111821184457
+    second: Jaguar FIA death sheet_23
+  - first:
+      213: -7854177911656232771
+    second: Jaguar FIA death sheet_24
+  - first:
+      213: -1706389475053952033
+    second: Jaguar FIA death sheet_25
+  - first:
+      213: 7678045598212048672
+    second: Jaguar FIA death sheet_26
+  - first:
+      213: -3224303235169347897
+    second: Jaguar FIA death sheet_27
+  - first:
+      213: 2347388115799619796
+    second: Jaguar FIA death sheet_28
+  - first:
+      213: -5849868145622395524
+    second: Jaguar FIA death sheet_29
+  - first:
+      213: 1232263288364921481
+    second: Jaguar FIA death sheet_30
+  - first:
+      213: 1544846077632149484
+    second: Jaguar FIA death sheet_31
+  - first:
+      213: 8523143711251943922
+    second: Jaguar FIA death sheet_32
+  - first:
+      213: -4832959157425320409
+    second: Jaguar FIA death sheet_33
+  - first:
+      213: 5134878678017894450
+    second: Jaguar FIA death sheet_34
+  - first:
+      213: 4512715156338163466
+    second: Jaguar FIA death sheet_35
+  - first:
+      213: 761461693079182716
+    second: Jaguar FIA death sheet_36
+  - first:
+      213: 6511934084429664238
+    second: Jaguar FIA death sheet_37
+  - first:
+      213: -2345253276103965111
+    second: Jaguar FIA death sheet_38
+  - first:
+      213: 7317414129928933633
+    second: Jaguar FIA death sheet_39
+  - first:
+      213: 3776137682859529987
+    second: Jaguar FIA death sheet_40
+  - first:
+      213: -2050307659590614281
+    second: Jaguar FIA death sheet_41
+  - first:
+      213: 618323944169728691
+    second: Jaguar FIA death sheet_42
+  - first:
+      213: 1719314188402849781
+    second: Jaguar FIA death sheet_43
+  - first:
+      213: 4280710585827162330
+    second: Jaguar FIA death sheet_44
+  - first:
+      213: 6206736150208944955
+    second: Jaguar FIA death sheet_45
+  - first:
+      213: 797960288507671424
+    second: Jaguar FIA death sheet_46
+  - first:
+      213: 4332910894246015378
+    second: Jaguar FIA death sheet_47
+  - first:
+      213: 7885103146535693103
+    second: Jaguar FIA death sheet_48
+  - first:
+      213: -8321386968754346051
+    second: Jaguar FIA death sheet_49
+  - first:
+      213: 897156820042427370
+    second: Jaguar FIA death sheet_50
+  - first:
+      213: 2236413635558008435
+    second: Jaguar FIA death sheet_51
+  - first:
+      213: -6534500397031597435
+    second: Jaguar FIA death sheet_52
+  - first:
+      213: 8879761985175051451
+    second: Jaguar FIA death sheet_53
+  - first:
+      213: -3563577050269215907
+    second: Jaguar FIA death sheet_54
+  - first:
+      213: 4220085158329440483
+    second: Jaguar FIA death sheet_55
+  - first:
+      213: 2076315597842101004
+    second: Jaguar FIA death sheet_56
+  - first:
+      213: -3883145339791184190
+    second: Jaguar FIA death sheet_57
+  - first:
+      213: -3899612442579891385
+    second: Jaguar FIA death sheet_58
+  - first:
+      213: -7398570764819811534
+    second: Jaguar FIA death sheet_59
+  - first:
+      213: -655328870511942200
+    second: Jaguar FIA death sheet_60
+  - first:
+      213: 7177178282191974569
+    second: Jaguar FIA death sheet_61
+  - first:
+      213: 1451551122447089596
+    second: Jaguar FIA death sheet_62
+  - first:
+      213: -8749120007100373551
+    second: Jaguar FIA death sheet_63
+  - first:
+      213: -8978077841189381048
+    second: Jaguar FIA death sheet_64
+  - first:
+      213: 5283236753448730473
+    second: Jaguar FIA death sheet_65
+  - first:
+      213: -8948361058060762493
+    second: Jaguar FIA death sheet_66
+  - first:
+      213: -5943196321574946182
+    second: Jaguar FIA death sheet_67
+  - first:
+      213: 2322379940407687950
+    second: Jaguar FIA death sheet_68
+  - first:
+      213: 3321016757282505649
+    second: Jaguar FIA death sheet_69
+  - first:
+      213: -6628313133740473778
+    second: Jaguar FIA death sheet_70
+  - first:
+      213: 1933497378900619461
+    second: Jaguar FIA death sheet_71
+  - first:
+      213: 4441268932568152064
+    second: Jaguar FIA death sheet_72
+  - first:
+      213: 891662907548376589
+    second: Jaguar FIA death sheet_73
+  - first:
+      213: 3275832712941522185
+    second: Jaguar FIA death sheet_74
+  - first:
+      213: 1381941203642186674
+    second: Jaguar FIA death sheet_75
+  - first:
+      213: 944672530184266097
+    second: Jaguar FIA death sheet_76
+  - first:
+      213: 292381989515119391
+    second: Jaguar FIA death sheet_77
+  - first:
+      213: 5632423552770867146
+    second: Jaguar FIA death sheet_78
+  - first:
+      213: 5647360743302095257
+    second: Jaguar FIA death sheet_79
+  - first:
+      213: 2654961158115998890
+    second: Jaguar FIA death sheet_80
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 600
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Jaguar FIA death sheet_0
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 3103
+        width: 706
+        height: 993
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0695a4f9ccc683200800000000000000
+      internalID: 159997412873230688
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jaguar FIA death sheet_1
+      rect:
+        serializedVersion: 2
+        x: 1151
+        y: 3103
+        width: 706
+        height: 993
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 23d5c06b05e6122c0800000000000000
+      internalID: -4458160863189377742
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jaguar FIA death sheet_2
+      rect:
+        serializedVersion: 2
+        x: 2175
+        y: 3103
+        width: 738
+        height: 993
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 68fe9d7254dc56b80800000000000000
+      internalID: -8402083832884760698
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jaguar FIA death sheet_3
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 2079
+        width: 738
+        height: 994
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7d65c783c0fd89840800000000000000
+      internalID: 5231176210771105495
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jaguar FIA death sheet_4
+      rect:
+        serializedVersion: 2
+        x: 1151
+        y: 2111
+        width: 706
+        height: 962
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 20e4515064bdbfaf0800000000000000
+      internalID: -361454251293716990
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jaguar FIA death sheet_5
+      rect:
+        serializedVersion: 2
+        x: 2111
+        y: 2113
+        width: 802
+        height: 960
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d99aa564503c1e8f0800000000000000
+      internalID: -512914455120926307
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jaguar FIA death sheet_6
+      rect:
+        serializedVersion: 2
+        x: 91
+        y: 1052
+        width: 842
+        height: 995
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: edc0e5582d9d8b060800000000000000
+      internalID: 6969559921559735518
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jaguar FIA death sheet_7
+      rect:
+        serializedVersion: 2
+        x: 1076
+        y: 1024
+        width: 905
+        height: 992
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2e932f24b7f24b710800000000000000
+      internalID: 1708042365130914274
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jaguar FIA death sheet_8
+      rect:
+        serializedVersion: 2
+        x: 1986
+        y: 1026
+        width: 1086
+        height: 1023
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 482df5f7bd952d6b0800000000000000
+      internalID: -5273053414427733372
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jaguar FIA death sheet_45
+      rect:
+        serializedVersion: 2
+        x: 319
+        y: 1375
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b3b97c7d4a1c22650800000000000000
+      internalID: 6206736150208944955
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: e66c7c1328eb99e44b8b3daac90f13e2
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Jaguar FIA death sheet_0: 159997412873230688
+      Jaguar FIA death sheet_1: -4458160863189377742
+      Jaguar FIA death sheet_10: 3244995216422762555
+      Jaguar FIA death sheet_11: 1554088964825191126
+      Jaguar FIA death sheet_12: -5557751341463099284
+      Jaguar FIA death sheet_13: 9063050247131012059
+      Jaguar FIA death sheet_14: -5252873198349545150
+      Jaguar FIA death sheet_15: -4367645792635394343
+      Jaguar FIA death sheet_16: 6541369011721988363
+      Jaguar FIA death sheet_17: -2509433900552604657
+      Jaguar FIA death sheet_18: 6301354472353891716
+      Jaguar FIA death sheet_19: 8508193976325640446
+      Jaguar FIA death sheet_2: -8402083832884760698
+      Jaguar FIA death sheet_20: 495215609405313692
+      Jaguar FIA death sheet_21: 8463945412200637614
+      Jaguar FIA death sheet_22: 3893461237894507144
+      Jaguar FIA death sheet_23: -3715173111821184457
+      Jaguar FIA death sheet_24: -7854177911656232771
+      Jaguar FIA death sheet_25: -1706389475053952033
+      Jaguar FIA death sheet_26: 7678045598212048672
+      Jaguar FIA death sheet_27: -3224303235169347897
+      Jaguar FIA death sheet_28: 2347388115799619796
+      Jaguar FIA death sheet_29: -5849868145622395524
+      Jaguar FIA death sheet_3: 5231176210771105495
+      Jaguar FIA death sheet_30: 1232263288364921481
+      Jaguar FIA death sheet_31: 1544846077632149484
+      Jaguar FIA death sheet_32: 8523143711251943922
+      Jaguar FIA death sheet_33: -4832959157425320409
+      Jaguar FIA death sheet_34: 5134878678017894450
+      Jaguar FIA death sheet_35: 4512715156338163466
+      Jaguar FIA death sheet_36: 761461693079182716
+      Jaguar FIA death sheet_37: 6511934084429664238
+      Jaguar FIA death sheet_38: -2345253276103965111
+      Jaguar FIA death sheet_39: 7317414129928933633
+      Jaguar FIA death sheet_4: -361454251293716990
+      Jaguar FIA death sheet_40: 3776137682859529987
+      Jaguar FIA death sheet_41: -2050307659590614281
+      Jaguar FIA death sheet_42: 618323944169728691
+      Jaguar FIA death sheet_43: 1719314188402849781
+      Jaguar FIA death sheet_44: 4280710585827162330
+      Jaguar FIA death sheet_45: 6206736150208944955
+      Jaguar FIA death sheet_46: 797960288507671424
+      Jaguar FIA death sheet_47: 4332910894246015378
+      Jaguar FIA death sheet_48: 7885103146535693103
+      Jaguar FIA death sheet_49: -8321386968754346051
+      Jaguar FIA death sheet_5: -512914455120926307
+      Jaguar FIA death sheet_50: 897156820042427370
+      Jaguar FIA death sheet_51: 2236413635558008435
+      Jaguar FIA death sheet_52: -6534500397031597435
+      Jaguar FIA death sheet_53: 8879761985175051451
+      Jaguar FIA death sheet_54: -3563577050269215907
+      Jaguar FIA death sheet_55: 4220085158329440483
+      Jaguar FIA death sheet_56: 2076315597842101004
+      Jaguar FIA death sheet_57: -3883145339791184190
+      Jaguar FIA death sheet_58: -3899612442579891385
+      Jaguar FIA death sheet_59: -7398570764819811534
+      Jaguar FIA death sheet_6: 6969559921559735518
+      Jaguar FIA death sheet_60: -655328870511942200
+      Jaguar FIA death sheet_61: 7177178282191974569
+      Jaguar FIA death sheet_62: 1451551122447089596
+      Jaguar FIA death sheet_63: -8749120007100373551
+      Jaguar FIA death sheet_64: -8978077841189381048
+      Jaguar FIA death sheet_65: 5283236753448730473
+      Jaguar FIA death sheet_66: -8948361058060762493
+      Jaguar FIA death sheet_67: -5943196321574946182
+      Jaguar FIA death sheet_68: 2322379940407687950
+      Jaguar FIA death sheet_69: 3321016757282505649
+      Jaguar FIA death sheet_7: 1708042365130914274
+      Jaguar FIA death sheet_70: -6628313133740473778
+      Jaguar FIA death sheet_71: 1933497378900619461
+      Jaguar FIA death sheet_72: 4441268932568152064
+      Jaguar FIA death sheet_73: 891662907548376589
+      Jaguar FIA death sheet_74: 3275832712941522185
+      Jaguar FIA death sheet_75: 1381941203642186674
+      Jaguar FIA death sheet_76: 944672530184266097
+      Jaguar FIA death sheet_77: 292381989515119391
+      Jaguar FIA death sheet_78: 5632423552770867146
+      Jaguar FIA death sheet_79: 5647360743302095257
+      Jaguar FIA death sheet_8: -5273053414427733372
+      Jaguar FIA death sheet_80: 2654961158115998890
+      Jaguar FIA death sheet_9: 521788791095448724
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

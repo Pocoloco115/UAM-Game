@@ -17,6 +17,10 @@ public class PlatformSpawner : MonoBehaviour
     [SerializeField] private float maxHorizontalDistance = 4f;   
     [SerializeField] private float maxVerticalStep = 4.5f;
     [SerializeField] private float spikePlatformChance = 0.2f;
+    [SerializeField] private GameObject coinPrefab;
+    [SerializeField] private float coinYOffset = 1f;
+    [SerializeField] private float coinProbability = 1f;
+
     private float nextSpawnY;
     private float minX;
     private float maxX;
@@ -26,7 +30,7 @@ public class PlatformSpawner : MonoBehaviour
     void Start()
     {
         CalculateCameraBounds();
-
+        player = GameObject.FindGameObjectWithTag("Player").transform;
         nextSpawnY = player.position.y + 2f;
         lastPlatformPos = player.position;
 
@@ -77,6 +81,11 @@ public class PlatformSpawner : MonoBehaviour
         GameObject prefab = ChoosePlatformPrefab(spawnPos);
 
         Instantiate(prefab, spawnPos, Quaternion.identity);
+
+        if (Random.value < coinProbability)
+        {
+            Instantiate(coinPrefab, new Vector2(spawnPos.x, spawnPos.y + 1), Quaternion.identity);
+        }
 
         lastPlatformPos = spawnPos;
         nextSpawnY += verticalDistance;

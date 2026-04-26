@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a925bf76120b20b4884fa620595a2cbd, type: 3}
+  m_Name: Default
+  m_EditorClassIdentifier: Assembly-CSharp::PlayerSO
+  id: default
+  playerName: Default
+  playerPrefab: {fileID: 6372326610950510170, guid: 22097da701de4c547868ff7c8a56a462, type: 3}
+  menuSprite: {fileID: -9217409067371959239, guid: c006a403a5968a041b946d651ada1616, type: 3}
+  unlockType: 0
+  price: 0
+  requiredLevelName: 

@@ -4,9 +4,9 @@ using UnityEngine;
 public class Platform : MonoBehaviour
 {
     [Header("Player Reference")]
-    [SerializeField] private Transform player;
     private bool isSafe = true;
     private Camera mainCamera;
+    private Transform player;
 
     private void Awake()
     {
@@ -20,6 +20,7 @@ public class Platform : MonoBehaviour
     void Start()
     {
         mainCamera = Camera.main;
+        player = Player.Instance.transform;
     }
 
     // Update is called once per frame

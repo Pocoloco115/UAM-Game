@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a925bf76120b20b4884fa620595a2cbd, type: 3}
+  m_Name: Miku
+  m_EditorClassIdentifier: Assembly-CSharp::PlayerSO
+  id: miku
+  playerName: Miku
+  playerPrefab: {fileID: 4130020097628002018, guid: 6b0dc9a630ef69841973c035ceed3696, type: 3}
+  menuSprite: {fileID: 465130523672052039, guid: 71e395cc6f02c944fb2e2a431f7ee7bf, type: 3}
+  unlockType: 1
+  price: 100
+  requiredLevelName: 
