@@ -49,7 +49,12 @@ public class GameData : MonoBehaviour
     public void CompleteLevel(string name)
     {
         var level = DataManager.Instance.data.levelsCompleted.Find(x => x.name == name);
-        if (level == null) return;
+        if (level == null)
+        {
+            level = new Level { name = name, isCompleted = true };
+            DataManager.Instance.data.levelsCompleted.Add(level);
+            return;
+        }
         level.isCompleted = true;
         DataManager.Instance.SaveData();
     }

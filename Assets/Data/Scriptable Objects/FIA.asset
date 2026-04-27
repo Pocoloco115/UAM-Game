@@ -16,6 +16,6 @@ MonoBehaviour:
   playerName: FIA
   playerPrefab: {fileID: 6570374401882776173, guid: 93b5bd7fc23bd4a44ad8f638057a2cfe, type: 3}
   menuSprite: {fileID: -3938955916652249623, guid: 72b80fce105c0bd4492811f2eb499e65, type: 3}
-  unlockType: 1
+  unlockType: 2
   price: 600
-  requiredLevelName: 
+  requiredLevelName: Level 1

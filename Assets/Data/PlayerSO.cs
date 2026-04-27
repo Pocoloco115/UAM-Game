@@ -2,9 +2,9 @@ using UnityEngine;
 
 public enum UnlockType
 {
-    StartUnlocked,   // desbloqueada desde inicio
-    Purchase,        // se compra con monedas
-    CompleteLevel    // se desbloquea al completar un nivel
+    StartUnlocked,   
+    Purchase,       
+    CompleteLevel   
 }
 
 [CreateAssetMenu(fileName = "PlayerSO", menuName = "Scriptable Objects/PlayerSO")]
@@ -17,6 +17,6 @@ public class PlayerSO : ScriptableObject
 
     public UnlockType unlockType;
 
-    public int price;                 // si unlockType == Purchase
-    public string requiredLevelName;  // si unlockType == CompleteLevel
+    public int price;                 
+    public string requiredLevelName;  
 }

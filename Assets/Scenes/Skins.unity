@@ -1115,7 +1115,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &599751587
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1925,6 +1925,7 @@ MonoBehaviour:
   skinImage: {fileID: 1234259694}
   purchaseSelectButton: {fileID: 546245673}
   purchaseSelectText: {fileID: 546245672}
+  priceGroup: {fileID: 97532575}
   priceText: {fileID: 313112605}
   wallet: {fileID: 1298123541}
   skinPreviewGroup: {fileID: 1234259696}

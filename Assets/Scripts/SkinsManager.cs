@@ -12,6 +12,7 @@ public class SkinsManager : MonoBehaviour
 
     [SerializeField] private Button purchaseSelectButton;
     [SerializeField] private TMPro.TextMeshProUGUI purchaseSelectText;
+    [SerializeField] private GameObject priceGroup;
     [SerializeField] private TMPro.TextMeshProUGUI priceText;
     [SerializeField] private TMPro.TextMeshProUGUI wallet;
 
@@ -106,20 +107,21 @@ public class SkinsManager : MonoBehaviour
         if (IsUnlocked(so))
         {
             purchaseSelectText.text = "Select";
-            if (priceText != null) priceText.text = "";
+            if(priceGroup != null) priceGroup.SetActive(false);
             purchaseSelectButton.interactable = true;
             return;
         }
         if (so.unlockType == UnlockType.Purchase)
         {
             purchaseSelectText.text = "Purchase";
+            if (priceGroup != null) priceGroup.SetActive(true);
             if (priceText != null) priceText.text = so.price.ToString();
             purchaseSelectButton.interactable = true;
         }
         else if (so.unlockType == UnlockType.CompleteLevel)
         {
             purchaseSelectText.text = $"Beat {so.requiredLevelName}";
-            if (priceText != null) priceText.text = "";
+            if(priceGroup != null) priceGroup.SetActive(false);
             purchaseSelectButton.interactable = false;
         }
         else 
@@ -163,7 +165,15 @@ public class SkinsManager : MonoBehaviour
                 .FirstOrDefault(x => x.name == so.requiredLevelName);
 
             if (lvl != null && lvl.isCompleted)
+            {
+                if(entry != null)
+                {
+                    entry.isEarned = true;
+                    DataManager.Instance.SaveData();
+                }
                 return true;
+            }
+                
         }
 
         return false;

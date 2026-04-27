@@ -9,13 +9,16 @@ EditorBuildSettings:
     path: Assets/Scenes/MainMenu.unity
     guid: 09eddc65573694541878232c94e880f4
   - enabled: 1
+    path: Assets/Scenes/Level1.unity
+    guid: 2af29823cea1dde499d48e2aac70e1ad
+  - enabled: 1
     path: Assets/Scenes/SettingsMenu.unity
     guid: eae45a882d94c7a4886578cdcda6719a
   - enabled: 1
     path: Assets/Scenes/Skins.unity
     guid: 11568664cc6af4943a76bf2e0abd75ba
   - enabled: 1
-    path: Assets/Scenes/Level1.unity
+    path: Assets/Scenes/Infinite.unity
     guid: 8c9cfa26abfee488c85f1582747f6a02
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
